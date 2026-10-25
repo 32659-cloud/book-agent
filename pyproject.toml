@@ -1,0 +1,22 @@
+[project]
+name = "book-agent"
+version = "0.1.0"
+description = "Discord 書單 agent：用封面照片辨識書名、作者、類別，記到個人書單"
+requires-python = ">=3.12"
+dependencies = [
+    "discord-py>=2.7.1",
+    "openpyxl>=3.1.5",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+book-agent = "book_agent.main:run"
+
+[build-system]
+requires = ["uv_build>=0.12.14,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
