@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# book-agent 的執行資料
+data/
+photos/
+*.xlsx
+.env.*
+!.env.example
